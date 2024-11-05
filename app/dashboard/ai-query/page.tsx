@@ -1,12 +1,12 @@
 "use client";
 import React, { useState } from 'react';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, LineChart, Line } from 'recharts';
-import { Search, Brain, Clock, FileText, AlertTriangle, Activity, TrendingUp, Users } from 'lucide-react';
+import { XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, LineChart, Line } from 'recharts';
+import { Search, Brain, Clock, FileText, AlertTriangle, Activity, TrendingUp, } from 'lucide-react';
 
 const AIQueryDashboard = () => {
-  const [queryInput, setQueryInput] = useState('');
-  const [showSuggestions, setShowSuggestions] = useState(false);
+  const [setQueryInput] = useState('');
+  const [showSuggestions] = useState(false);
 
   const suggestedQueries = [
     {

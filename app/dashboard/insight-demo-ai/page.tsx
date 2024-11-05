@@ -1,8 +1,8 @@
 "use client";
 import React from 'react';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
-import { LineChart, Line, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
-import { Brain, Activity, AlertTriangle, TrendingUp, Search, Calendar, Users, FileText } from 'lucide-react';
+import { LineChart, Line,  XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import { Brain, Activity, AlertTriangle, TrendingUp } from 'lucide-react';
 
 const InsightDashboard = () => {
   // Dati predittivi per rischio ricadute

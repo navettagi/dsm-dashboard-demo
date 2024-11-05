@@ -1,13 +1,10 @@
 "use client";
-import React, { useState } from 'react';
+import React from 'react';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
-import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs';
 import { LineChart, Line, BarChart, Bar, PieChart, Pie, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, Cell } from 'recharts';
-import { Brain, Activity, AlertTriangle, TrendingUp, Search, Calendar, Users, FileText } from 'lucide-react';
+import { Activity, AlertTriangle, TrendingUp, Search, Calendar, Users, FileText } from 'lucide-react';
 
 const CoreDashboard = () => {
-  const [activeTab, setActiveTab] = useState('overview');
-
   // Dati per il trend disturbi
   const trendData = [
     { month: 'Gen', disturbiUmore: 402, schizofrenia: 348, disturbiAnsia: 275 },

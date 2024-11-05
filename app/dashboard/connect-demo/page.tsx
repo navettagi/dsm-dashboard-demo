@@ -2,9 +2,8 @@
 
 import React from 'react';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
-import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs';
 import { LineChart, Line, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
-import { MessageSquare, Calendar, Users, Activity, AlertTriangle, TrendingUp, FileText } from 'lucide-react';
+import { MessageSquare, Calendar, Activity, AlertTriangle, TrendingUp, FileText } from 'lucide-react';
 
 const ConnectDashboard = () => {
   // Dati per engagement pazienti
