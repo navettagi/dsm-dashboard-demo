@@ -1,9 +1,17 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
+
+interface CategoryItem {
+  category: string;
+  queries: string[];
+}
 
 const AIQueryDashboard = () => {
-  const suggestedQueries = [
+  const setQueryInput = useState('');
+  const setShowSuggestions = useState(false);
+
+  const suggestedQueries: CategoryItem[] = [
     {
       category: "Analisi Trend",
       queries: [
@@ -14,7 +22,7 @@ const AIQueryDashboard = () => {
     }
   ];
 
-  const handleQuerySelect = (selectedQuery: string) => {
+  const handleQuerySelect = (selectedQuery: string): void => {
     setQueryInput(selectedQuery);
     setShowSuggestions(false);
   };
