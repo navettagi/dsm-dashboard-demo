@@ -8,3 +8,31 @@
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
+
+# Configurazione della cache
+[build.processing]
+  skip_processing = false
+
+[build.processing.css]
+  bundle = true
+  minify = true
+
+[build.processing.js]
+  bundle = true
+  minify = true
+
+[build.processing.html]
+  pretty_urls = true
+
+[build.processing.images]
+  compress = true
+
+# Cache directories
+[[plugins]]
+package = "netlify-plugin-cache"
+  [plugins.inputs]
+    paths = [
+      ".next/cache",
+      "node_modules/.cache",
+      ".cache"
+    ]
