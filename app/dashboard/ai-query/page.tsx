@@ -7,8 +7,8 @@ interface CategoryItem {
 }
 
 const AIQueryDashboard = () => {
-  const [queryInput, setQueryInput] = useState<string>('');
-  const [showSuggestions, setShowSuggestions] = useState(false);
+  const setQueryInput = useState<string>('');
+  const setShowSuggestions = useState(false);
 
   const suggestedQueries: CategoryItem[] = [
     {
