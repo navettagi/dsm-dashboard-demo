@@ -2,12 +2,12 @@
 
 import React, { useState } from 'react';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
-import { _BarChart, _Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, LineChart, Line } from 'recharts';
+import { BarChart, _Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, LineChart, Line } from 'recharts';
 import { Search, Brain, Clock, FileText, AlertTriangle, Activity, TrendingUp, _Users } from 'lucide-react';
 
 const AIQueryDashboard = () => {
-  const [_queryInput, setQueryInput] = useState('');
-  const [showSuggestions, _setShowSuggestions] = useState(false);
+  const [_queryInput, _setQueryInput] = useState('');
+  const [_showSuggestions, _setShowSuggestions] = useState(false);
 
   const suggestedQueries = [
     {
