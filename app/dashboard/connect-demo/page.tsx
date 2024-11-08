@@ -1,6 +1,7 @@
 "use client";
 
 import React from 'react';
+import Link from 'next/link';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 import { LineChart, Line, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 import { MessageSquare, Calendar, Activity, AlertTriangle, TrendingUp, FileText } from 'lucide-react';
@@ -53,13 +54,31 @@ const ConnectDashboard = () => {
 
   return (
     <div className="min-h-screen bg-gray-50 p-4 md:p-6">
-    <div className="max-w-7xl mx-auto space-y-6">
-    {/* Header */}
-    <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
-    <div>
-    <h1 className="text-2xl font-bold text-gray-900">DSM Connect</h1>
-    <p className="text-gray-500">Comunicazione e Monitoraggio Pazienti</p>
-    </div>
+      <div className="max-w-7xl mx-auto space-y-6">
+        {/* Header */}
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+          <div>
+            <h1 className="text-2xl font-bold text-gray-900">DSM Connect</h1>
+            <Link 
+              href="/" 
+              className="px-4 py-1.5 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-colors flex items-center gap-2 text-sm"
+            >
+              <svg 
+                xmlns="http://www.w3.org/2000/svg" 
+                className="h-4 w-4" 
+                viewBox="0 0 20 20" 
+                fill="currentColor"
+              >
+                <path 
+                  fillRule="evenodd" 
+                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" 
+                  clipRule="evenodd" 
+                />
+              </svg>
+              Menu
+            </Link>
+            <p className="text-gray-500">Comunicazione e Monitoraggio Pazienti</p>
+          </div>
     <div className="flex items-center gap-2 text-sm text-gray-500">
     <Calendar className="h-4 w-4" />
     <span>Aggiornato: 04 Nov 2024, 09:45</span>
